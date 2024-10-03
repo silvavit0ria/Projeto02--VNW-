@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 10%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 10vh;
+}
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 30vw;
+  list-style: none;
+}
+
+button {
+  background-color: #FF0000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: white;
+}
+
+.primeiraSessao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+.primeiraSessao div {
+  height: 22vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 30vw;
+}
+.primeiraSessao img {
+  width: 30%;
+}
+
+.segundaSessao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+}
+.segundaSessao div {
+  padding: 2rem;
+  width: 30vw;
+  margin-right: 25%;
+}
+.segundaSessao div h6 {
+  font-size: 0.9rem;
+  color: #FF0000;
+  height: 2vh;
+}
+.segundaSessao div h2 {
+  width: 15vw;
+  height: auto;
+  font-family: "Koh Santepheap", serif;
+}
+.segundaSessao div p {
+  font-family: "Poppins", sans-serif;
+}
+.segundaSessao img {
+  width: 30%;
+}
+
+.terceiraSessao {
+  display: flex;
+  justify-content: space-evenly;
+  height: 40vh;
+}
+.terceiraSessao .item {
+  background-color: #F8F5F2;
+  text-align: center;
+  width: 20%;
+  border-radius: 6%;
+}
+.terceiraSessao .item h6 {
+  font-size: 1.5rem;
+  font-family: "Koh Santepheap", serif;
+}
+.terceiraSessao .item h5 {
+  color: #FF0000;
+  font-size: 1.2rem;
+  padding: 2vh;
+}
+.terceiraSessao .item img {
+  width: 70%;
+  position: relative;
+  left: 2%;
+  bottom: 30%;
+}
+
+.quartaSessao {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  padding: 5vw;
+}
+.quartaSessao i {
+  color: #FF0000;
+  margin: 0.5vw;
+}
+.quartaSessao .item-quartaSessao {
+  background-color: #F8F5F2;
+  border-radius: 2%;
+  text-align: start;
+  width: 20vw;
+  height: auto;
+}
+.quartaSessao .item-quartaSessao img {
+  width: 10vw;
+  padding: 0.5rem;
+}
+.quartaSessao .item-quartaSessao h6 {
+  font-size: 1.1rem;
+  font-family: "Koh Santepheap", serif;
+  margin: 0.5vw;
+}
+.quartaSessao .item-quartaSessao p {
+  font-family: "Poppins", sans-serif;
+  margin: 0.5vw;
+}
+
+.finalSessao {
+  display: flex;
+  justify-content: space-evenly;
+  height: 20vh;
+}
+.finalSessao h5 {
+  font-family: "Koh Santepheap", serif;
+  text-align: center;
+}
+.finalSessao ul {
+  list-style-type: none;
+  padding: 0.5rem;
+}
+.finalSessao ul li {
+  padding: 0.2rem;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid #F8F5F2;
+}
+footer .footer-logo img {
+  width: 50%;
+}
+footer .footer-contato img {
+  width: 25%;
+  padding: 0.5rem;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,195 @@
+$font-titulos: "Koh Santepheap", serif;
+$font-texto: "Poppins", sans-serif;
+$cor-de-fundo-caixas: #F8F5F2;
+
+//@mixin permite que você faça grupos de declarações css
+@mixin flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+// @mixin nome{}
+// @include nomdeDoMixin
+
+@mixin estilo-button{
+    background-color: #FF0000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    //1 valor top, bottom,
+    // 2 valor para esquerda e dereita
+    margin: 0 10%;
+}
+
+header{
+    //para usar o @mixin, vamos chamar o include
+    @include flexbox();
+    height: 10vh;//vh ->height
+
+    ul{
+        @include flexbox();
+       width: 30vw;
+       list-style: none;
+    }
+}
+
+button{
+    @include estilo-button();
+}
+
+.primeiraSessao{
+  @include flexbox();
+  height: auto;
+
+  div{
+    height: 22vh;
+    @include flexbox();
+    flex-direction: column;
+    align-items: flex-start;
+    width: 30vw;
+  }
+
+  img{
+   width:30%;
+}
+
+
+}
+.segundaSessao{
+    @include flexbox();
+    height: 80vh;
+    
+    div{
+        padding: 2rem;
+        width: 30vw;
+        margin-right: 25%;
+
+        h6{
+            font-size: 0.9rem;
+            color: #FF0000;
+            height: 2vh;
+        }
+        h2{
+            width: 15vw;
+            height: auto;
+            font-family: $font-titulos;
+        }
+        p{
+            font-family:$font-texto ;
+        }
+    }
+    
+    img{
+        width: 30%;
+        
+    }
+}
+
+.terceiraSessao{
+    display: flex;
+     justify-content: space-evenly;
+     height: 40vh;
+    .item{
+       background-color: $cor-de-fundo-caixas;
+      text-align: center;
+      width: 20%;
+      border-radius: 6%;
+      h6{
+        font-size: 1.5rem;
+        font-family: $font-titulos;
+      }
+      h5{
+        color: #FF0000;
+        font-size: 1.2rem;
+        padding: 2vh;
+      }
+       img{
+        width: 70%;
+        position: relative;
+        left: 2%;
+        bottom: 30%;
+        
+
+       }
+       
+    }
+   
+}
+.quartaSessao{
+    display: flex;
+    justify-content: space-evenly;
+    height: auto;
+    padding: 5vw;
+
+    i{
+        color: #FF0000;
+        margin: 0.5vw;
+    }
+    .item-quartaSessao{
+        background-color: $cor-de-fundo-caixas;
+        border-radius: 2%;
+        text-align: start;
+        width: 20vw;
+        height: auto;
+        img{
+            width: 10vw;
+            padding: 0.5rem;
+        }
+       h6{
+        font-size: 1.1rem;
+        font-family: $font-titulos;
+        margin: 0.5vw;
+       }
+       p{
+        font-family:$font-texto ;
+        margin: 0.5vw;
+       }
+       
+    }
+}
+.finalSessao{
+    display: flex;
+    justify-content: space-evenly;
+    height: 20vh;
+
+    h5{
+        font-family: $font-titulos;
+        text-align: center;
+
+    }
+    ul{
+        
+        list-style-type: none;
+        padding: 0.5rem;
+        li{
+            padding: 0.2rem;
+        }
+    }
+
+}
+footer{
+    @include flexbox();
+    border-top: solid #F8F5F2;
+    
+    .footer-logo{
+        
+        img{
+            width: 50%; 
+        }
+    }
+    .footer-contato{
+        img{
+            width: 25%;
+            padding: 0.5rem;
+        }
+    }
+}
